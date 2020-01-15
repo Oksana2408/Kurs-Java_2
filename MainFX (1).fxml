@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="340.0" style="-fx-background-color: eecbad;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TextArea fx:id="textArea" editable="false" maxWidth="Infinity" prefHeight="449.0" prefWidth="320.0" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="rectangle" />
+                  <String fx:value="rectangle-1" />
+               </styleClass>
+            </TextArea>
+            <HBox spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="textField" maxHeight="Infinity" maxWidth="Infinity" onAction="#sendMsg" promptText="Введите сообщение..." styleClass="rectangle" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font></TextField>
+                  <Button fx:id="btnSend" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#sendMsg" styleClass="rectangle-1" stylesheets="@style.css" text="Send" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font></Button>
+               </children>
+
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+.rectangle {
+  -fx-box-sizing: border-box;
+  -fx-border: 1px solid #828282;
+  -fx-background: radial-gradient(circle, #FFDAB9 0%, #FFE5CE 70%, #FFF 100%);
+  -fx-box-shadow: 0 2px 4px 0 #CDAF95;
+}
+
+.rectangle-1 {
+  -fx-box-sizing: border-box;
+  -fx-border-radius: 20px;
+  -fx-background-color: #FFDAB9;
+  -fx-border: 1px solid #828282;
+  -fx-box-shadow: 0 2px 4px 0 #CDAF95;
+}
